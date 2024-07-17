@@ -1,0 +1,33 @@
+.cardButton{
+    font-size: 1.5rem;
+    background: none;
+    cursor: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    color: #333;
+    
+
+}
+
+.status{
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
