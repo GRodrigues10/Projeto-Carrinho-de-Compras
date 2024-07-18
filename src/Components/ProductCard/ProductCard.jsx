@@ -2,10 +2,18 @@ import './ProductCard.css'
 import { FaCartPlus } from "react-icons/fa6";
 import propTypes from 'prop-types'
 import formatCurrency from '../../Utils/FormatCurrency';
+import { useContext } from 'react';
+import appContext from '../../Context/appContext';
 
 function ProductCard({ data }){
 
     const {title, thumbnail, price} = data;
+
+    const {cartItens, setCartItens} = useContext(appContext);
+
+    const handleAddCart = () => setCartItens([... cartItens, data]);
+        
+    
 
     return(<>
             <section className="productCard">
@@ -14,7 +22,7 @@ function ProductCard({ data }){
                     <h2 className="cardPrice">{formatCurrency(price, 'BRL')}</h2>
                     <h2 className="cardTitle">{title}</h2>
                 </div>
-                <button type="button" className="addCardBtn"><FaCartPlus/></button>
+                <button type="button" className="addCardBtn" onClick={handleAddCart}><FaCartPlus/></button>
             </section>
            </>)
 }
