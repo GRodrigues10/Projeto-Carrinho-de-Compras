@@ -19,7 +19,7 @@ Este projeto consiste no desenvolvimento de um aplicativo de carrinho de compras
 <h3>Adição de Produtos ao Carrinho</h3>
 
 * Permite adicionar produtos ao carrinho de compras.
-* Cada produto pode ser adicionado diretamente da lista de produtos ou da página de detalhes do produto.
+* Cada produto pode ser adicionado diretamente da lista de produtos.
 
 <h3>Remoção de Produtos do Carrinho</h3>
 
